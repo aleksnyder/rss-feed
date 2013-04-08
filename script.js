@@ -1,5 +1,3 @@
-// ISCPA added search filter, home icon, updated CDN-Hosted links
-// forked from sumukh1's "forked: RSS Reader with jQuery Mobile" http://jsdo.it/sumukh1/4Ton
 /* configuration */
 var maxLength = 20;
 /* writing HTML */
@@ -45,21 +43,7 @@ for(i=1; i<=maxLength; i++){
 }
 /* JSONP */
 $(function(){
-  // getOnlineFeed('http://www4.lehigh.edu/news/rss/LUnews_rss.xml');
-  getOnlineFeed('http://feeds.feedburner.com/HenningsBlog');
-  
-/*
-  getOnlineFeed('http://www.engadget.com/rss.xml');
-  getOnlineFeed('http://www.fremont.k12.ca.us/site/RSS.aspx?DomainID=1&ModuleInstanceID=4613&PageID=1');
-  getOnlineFeed('http://news.google.com/news?hl=ja&ned=us&ie=UTF-8&oe=UTF-8&output=atom&topic=h');
-  getOnlineFeed('http://www.appbank.net/feed');
-  getOnlineFeed('http://japanese.engadget.com/rss.xml');
-  getOnlineFeed('http://www.bebit.co.jp/index.xml');  
-  getOnlineFeed('http://www.ntt.com/rss/release.rdf?link_id=ostop_service_rss');
-  getOnlineFeed('http://feeds.feedburner.com/gapsis');
-  getOnlineFeed('http://octoba.net/feed');
-  getOfflineFeed('google_news_jsonp.js');
-*/
+  getOnlineFeed('https://itunes.apple.com/us/rss/topfreeapplications/limit=25/xml');
 });
 /* functions */
 var listEntries = function(json) {
